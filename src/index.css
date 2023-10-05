@@ -17,7 +17,6 @@ body {
 .container {
       display: flex;
       flex-direction: column;
-      /* justify-content: center; */
       align-items: center;
 }
 
@@ -29,6 +28,15 @@ form {
 }
 
 input {
+      padding: 0.5rem;
+      text-align: center;
+      font-size: medium;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: bold;
+}
+
+textarea {
+      max-width: 29em;
       padding: 0.5rem;
       text-align: center;
       font-size: medium;
@@ -58,22 +66,22 @@ button {
 section {
       display: flex;
       flex-direction: column;
-      max-width: 300px;
       height: auto;
-      width: 30rem;
       margin: 0;
       align-items: center;
 }
 
 article {
       border: 1px solid #fff;
+      border-radius: 5px;
       text-align: center;
       padding: 2px;
       margin-bottom: 0.5rem;
-  
+      min-width: 15rem;
       width: 30rem;
 }
 
-.post_auther{
- margin-right: 0;
+.post_auther {
+      display: flex;
+      justify-content: space-between;
 }

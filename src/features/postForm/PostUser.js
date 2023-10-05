@@ -5,7 +5,7 @@ const PostUser = ({ userId }) => {
   const users = useSelector(selectAllUsers)
   const user = users.find(user =>user.id === userId)
   return (
-    <span>{user ? user.user : "UnKnown Auther"}</span>
+    <span>--{user ? user.user : "UnKnown Auther"}</span>
   )
 }
 

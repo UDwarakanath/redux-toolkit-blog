@@ -20,6 +20,7 @@ const PostForm = () => {
         dispatch(addPosts(title,content,userId))
         setTitle("")
         setContent("")
+        setUserId("")
     }
   }
 
@@ -27,7 +28,7 @@ const PostForm = () => {
   return (
     <form onSubmit={handleOnSubmit}>
       <input type='text' value={title} placeholder='Title' onChange={(e)=>setTitle(e.target.value)}/>
-      <input type='text' value={content} placeholder='Content' onChange={(e)=>setContent(e.target.value)}/>
+      <textarea type='text' value={content} placeholder='Content' onChange={(e)=>setContent(e.target.value)}/>
       <select id="postAuthor" value={userId} onChange={(e)=>setUserId(e.target.value)}>
         <option value=""></option>
         {renderUsers}</select>
