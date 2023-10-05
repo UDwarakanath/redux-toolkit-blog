@@ -1,8 +1,79 @@
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+      padding: 0;
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+      background-color: #544f4f;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+}
+
+form {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+}
+
+input {
+      padding: 0.5rem;
+      text-align: center;
+      font-size: medium;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: bold;
+}
+
+#postAuthor {
+      padding: 0.5rem;
+      text-align: center;
+      cursor: pointer;
+      font-size: medium;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: bold;
+}
+
+button {
+      padding: 0.5rem;
+      cursor: pointer;
+      background-color: #fff;
+      color: #544f4f;
+      font-size: medium;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: bold;
+}
+
+section {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      height: auto;
+      width: 30rem;
+      margin: 0;
+      align-items: center;
+}
+
+article {
+      border: 1px solid #fff;
+      text-align: center;
+      padding: 2px;
+      margin-bottom: 0.5rem;
+  
+      width: 30rem;
+}
+
+.post_auther{
+ margin-right: 0;
+}

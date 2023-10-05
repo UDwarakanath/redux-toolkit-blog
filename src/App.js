@@ -1,20 +1,12 @@
-import { useSelector } from "react-redux";
 import PostForm from "./features/postForm/PostForm";
+import PostsLists from "./features/postForm/PostsLists";
 
 function App() {
-  const posts = useSelector(state => state.posts)
-  console.log(posts)
   return (
-    <>
+    <div className="container">
     <PostForm/>
-    <section>
-      {posts.map((post) => (
-        <article key={post.id}>
-        <h3>{post.title}</h3>
-      </article>
-      ))}
-    </section>
-      </>
+    <PostsLists/>
+      </div>
   );
 }
 
